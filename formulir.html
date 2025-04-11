@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jadwal Pelajaran - SDN 1 Sukanagara</title>
+    <title>Formulir Pendaftaran - SDN 1 Sukanagara</title>
     <style>
         body { font-family: sans-serif; margin: 0; padding: 0; background: #fff; color: #333; }
         header, footer { background: #b30000; color: white; padding: 1em; text-align: center; }
@@ -30,12 +30,14 @@
     </nav>
     <main class="container">
         
-        <h2>Jadwal Pelajaran Kelas 1 - 6</h2>
-        <table border="1" cellpadding="8">
-            <tr><th>Hari</th><th>Kelas 1</th><th>Kelas 2</th><th>Kelas 3</th><th>Kelas 4</th><th>Kelas 5</th><th>Kelas 6</th></tr>
-            <tr><td>Senin</td><td>B. Indonesia</td><td>Matematika</td><td>IPA</td><td>IPS</td><td>PKN</td><td>Agama</td></tr>
-            <tr><td>Selasa</td><td>Matematika</td><td>IPA</td><td>B. Sunda</td><td>Seni</td><td>Penjas</td><td>B. Indonesia</td></tr>
-        </table>
+        <h2>Pendaftaran Siswa Baru</h2>
+        <form action="mailto:sdn1sukanagara@email.com" method="post" enctype="text/plain">
+            <label>Nama Lengkap:<br><input type="text" name="nama"></label><br><br>
+            <label>Alamat:<br><textarea name="alamat" rows="3" cols="40"></textarea></label><br><br>
+            <label>Tanggal Lahir:<br><input type="date" name="tanggal_lahir"></label><br><br>
+            <label>Nama Orang Tua/Wali:<br><input type="text" name="wali"></label><br><br>
+            <input type="submit" value="Kirim">
+        </form>
     
     </main>
     <footer>
